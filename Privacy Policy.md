@@ -1,6 +1,6 @@
 # Moonlight SmartScan Privacy Policy
 
-Last Updated: May 4, 2025
+Last Updated: November 25, 2025
 
 Moonlight SmartScan is a browser extension designed to protect users by checking the safety of URLs against trusted threat intelligence sources, including URLhaus, VirusTotal, and Google Safe Browsing. We are committed to your privacy and do not collect, use, or sell any user data. This Privacy Policy explains how the extension processes data to provide its functionality, ensuring transparency and compliance with privacy standards.
 
