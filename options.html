@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moonlight SmartScan - Configuration</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html,
+    body {
+      width: 100% !important;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    body {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      min-height: 100vh !important;
+      padding: 20px !important;
+      box-sizing: border-box !important;
+    }
+
+    .config-container {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="config-container">
+    <div class="header-container">
+      <img src="icon48.png" alt="Logo">
+      <h2>Moonlight SmartScan Configuration</h2>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+      <label for="vtApiKey">VirusTotal API Key</label>
+      <input type="text" id="vtApiKey" placeholder="Enter VirusTotal API Key (64 characters)">
+      <p style="font-size: 12px; color: #a0a0a0; margin-top: 5px;">
+        Get your free API key from <a href="https://www.virustotal.com/gui/my-apikey" target="_blank"
+          style="color: #00e676;">virustotal.com</a>
+      </p>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+      <label for="gsbApiKey">Google Safe Browsing API Key</label>
+      <input type="text" id="gsbApiKey" placeholder="Enter Google Safe Browsing API Key">
+      <p style="font-size: 12px; color: #a0a0a0; margin-top: 5px;">
+        Get your API key from <a href="https://developers.google.com/safe-browsing/v4/get-started" target="_blank"
+          style="color: #00e676;">Google Cloud Console</a>
+      </p>
+    </div>
+
+    <button id="save">Save Configuration</button>
+    <div id="status" class="status-message"></div>
+
+    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #333;">
+      <h3 style="font-size: 14px; margin-bottom: 10px;">About</h3>
+      <p style="font-size: 12px; color: #a0a0a0; line-height: 1.6;">
+        Moonlight SmartScan uses multiple threat intelligence sources to protect you:
+      </p>
+      <ul style="font-size: 12px; color: #a0a0a0; line-height: 1.8; margin-top: 10px;">
+        <li><strong>Local Databases:</strong> URLhaus & PhishingDB (always active, no API key needed)</li>
+        <li><strong>VirusTotal:</strong> Enhanced malware detection (requires API key)</li>
+        <li><strong>Google Safe Browsing:</strong> Phishing & malware protection (requires API key)</li>
+      </ul>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+
+</html>

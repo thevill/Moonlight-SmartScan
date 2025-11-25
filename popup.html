@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moonlight SmartScan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="popup-container">
+    <div class="header-container">
+      <img src="icon48.png" alt="Logo">
+      <h2>Moonlight SmartScan</h2>
+    </div>
+
+    <div id="current-url" class="current-url"></div>
+
+    <div id="loading">
+      <div class="loading-animation"></div>
+      <span class="loading-text">Analyzing URL...</span>
+    </div>
+
+    <div id="results" style="display: none;"></div>
+
+    <div id="apiHint" class="hint" style="display: none;">
+      Add VirusTotal & Google Safe Browsing API keys in <a href="#" data-options-link>Options</a> for enhanced
+      detection.
+    </div>
+
+    <div style="margin-top: 20px; text-align: center; border-top: 1px solid #333; padding-top: 15px;">
+      <a href="https://razorpay.me/@moonlightsmartscan" target="_blank" rel="noopener noreferrer"
+        style="display: inline-flex; align-items: center; justify-content: center; background: #fff; color: #3395ff; text-decoration: none; padding: 8px 16px; border-radius: 4px; font-weight: bold; font-size: 14px; transition: opacity 0.2s;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Razorpay_logo.svg" alt="Razorpay"
+          style="height: 20px; margin-right: 8px;">
+        Donate
+      </a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
